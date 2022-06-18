@@ -19,11 +19,7 @@ function submitData() {
   document.body.innerHTML += `<p>${data.id}</p>`;
 })
 
-.catch(function (error) {
-  let message = 'Unauthorized Access'
-  console.log(error.message);
-  document.body.innerHTML += `<p>${message}</p>`;
-});
+.catch( error => {throw error})
 
 }
 
